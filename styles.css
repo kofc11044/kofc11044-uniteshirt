@@ -1,0 +1,135 @@
+.clearfix:after { visibility: hidden;display: block;font-size: 0;content: ".";clear: both;height: 0; }
+* html .clearfix { zoom: 1; }
+*:first-child+html .clearfix { zoom: 1; }
+
+html {
+	font-size: 16px; //1 rem = 16px
+}
+
+body {
+  background-color: #6699FF;
+  background-image: url(images/flower-trail.png);
+  /* Image courtesy of www.transparenttextures.com */
+  padding-top: 25px;
+  text-align: center;
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 14px;
+}
+
+p {
+  text-align: justify;
+}
+
+a {
+  color:#33507c;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover
+	{
+	color:#000000;
+	text-decoration:underline !important;
+	}
+	
+a:visited
+	{
+	color:#000000;
+	}
+
+h1 {
+	margin-bottom:1em;
+	margin-top:1em;
+	//font-size:160%;
+	font-size: 1.55rem;
+	text-decoration:none;
+	font-weight:bold;
+	line-height:1.2;
+	color: #F7FF0B;
+	font-family: Segoe UI; 
+	font-weight: bold;
+}
+
+/* @group main content */
+#main-content {
+  position:relative;
+  width:;
+  float:;
+  margin-top:10px;
+  z-index:;
+}
+#main-content h2 {
+  font-size:20px;
+  color:#F7FF0B;
+  font-weight:normal;
+  margin-top:-5px;
+  text-align: left;
+}
+#main-content h3 {
+  font-size:1.15rem;
+  color:#3300FF;
+  font-weight:bold;
+  margin-top:-1px;
+  text-align: left;
+}
+.content-b {
+  overflow:hidden;
+  clear:both;
+}
+/* Use responsive grid layout from http://www.responsivegridsystem.com/ */
+/*  SECTIONS  */
+.section {
+	clear: both;
+	padding: 0px;
+	margin: 0px;
+}
+
+/*  COLUMN SETUP  */
+.col {
+	display: block;
+	float:left;
+	margin: 1% 0 1% 1.6%;
+}
+.col:first-child { margin-left: 0; }
+
+/*  GROUPING  */
+.group:before,
+.group:after { content:""; display:table; }
+.group:after { clear:both;}
+.group { zoom:1; /* For IE 6/7 */ }
+/*  GRID OF TWO  */
+.span_2_of_2 {
+	width: 100%;
+}
+.span_1_of_2 {
+	width: 49.2%;
+}
+
+/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+
+@media only screen and (max-width: 480px) {
+	.col { 
+		margin: 1% 0 1% 0%;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.span_2_of_2, .span_1_of_2 { width: 100%; }
+}
+img {
+  max-width: 100%;
+  height: auto;
+  width: auto;
+}
+ol {
+  text-align: left;
+}
+li {
+  padding-bottom: 10px;
+}
+#centertext {
+    position: relative;
+    top: 50%; 
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+}
