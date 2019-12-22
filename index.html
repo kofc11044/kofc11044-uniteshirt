@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<title>KofC 11044 dues payment code</title>
+
+<!-- START META TAG SECTION -->
+<meta charset="utf-8">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<!-- END META TAG SECTION -->
+</head>
+
+<body>
+
+
+<!-- Paste code into News & Announcements area within UKnight.  Include the main-column div and scripts. Update each year for dates and amounts.  Set heading to:  "Annual Dues Payment Details". -->
+
+<div id="main-column">
+	<p>Brother Knights -</p>
+	<p>Again this year we are making this <span style="color: #0000ff;">
+			<strong>online payment option available for the annual statements</strong>
+		</span>.</p>
+	<p>Thank you for your continued support through prayers, event participation and membership dues. Your dues and donations play a large part in helping us meet the many financial support needs in our parish and local community.</p>
+	<p>There has been no increase in membership dues.&nbsp; Dues are $50 per regular member when paid on or after January 15, 2020. The specific amount due for each member is reflected in the annual dues statement.  <em>If you have not received your dues statement, please contact our Financial Secretary.</em></p>
+	<p>As in past years, you have the opportunity to participate in the <strong>Support Our Seminarians (SOS)</strong> fund drive and to support <strong>Gibault Children's Services</strong>. Recommended donations are <strong>$5.00</strong> for each program.</p>
+	<p>Please complete your selections in the form below and click "Pay Now" to complete your transaction.</p>
+	<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="paypal" id="duesform" onsubmit="totCalc()">
+		<table style="border: 0px solid red; border-collapse: separate; border-spacing:10px;">
+			<tbody>
+				<tr >
+					<td style="width: 250px;" align="right">
+						<input name="on0" type="hidden" value="Member #" />
+						<strong>Enter Member # (from Statement)</strong>
+					</td>
+					<td style="width: 200px;" align="right">
+						<input style="height:24px;padding-left:10px;background-color:lightgray;border-style:solid;border-width:thin;" maxlength="15" name="os0" required type="text" />
+					</td>
+				</tr>
+				<tr>
+					<td style="width: 250px;" align="right">
+						<strong><input name="on1" type="hidden" value="Dues Assessment" />Enter Dues Assessment Amount</strong>
+					</td>
+					<td align="right">
+						&dollar;&nbsp;
+						<input id="assessamt" name="os1" style="height:24px;padding-left:10px;background-color:lightgray;border-style:solid;border-width:thin;" required type="number" min="0" step="0.01" onchange="totCalc()"/>
+					</td>
+				</tr>					
+				<tr>
+					<td style="width: 250px;" align="right">
+						<strong><input name="on2" type="hidden" value="Gibault Raffle Tickets" />Select Gibault Raffle Tickets</strong>
+						<p align="justify" style="margin-top:0px; padding-left:10px;margin-bottom:0px;"><em>Mail your Gibault raffle tickets marked with your name and telephone number to the Financial Secretary in the provided envelope.</em></p>
+					</td>
+					<td style="vertical-align: top;" align="right">
+						<select id="select_tix" name="os2" style="width:168px;height:24px;padding-left:5px;background-color:lightgray;" onchange="totCalc()">
+							<option value="6 Tickets - $5.00" selected>6 Tickets = $5.00</option>
+							<option value="12 Tickets - $10.00">12 Tickets = $10.00</option>
+							<option value="No Tickets">No Tickets</option>
+						</select>
+					</td>
+				</tr>					
+				<tr>
+					<td style="width: 250px;" align="right">
+						<strong><input name="on3" type="hidden" value="SOS Donation" />Add "Support&nbsp;Our&nbsp;Seminarians" Donation</strong>
+					</td>
+					<td align="right">
+						&dollar;&nbsp;
+						<input id="sos" name="os3" style="height:24px;padding-left:10px;background-color:lightgray;border-style:solid;border-width:thin;" value="5.00" type="number" min="0" step="0.01" onchange="totCalc()"/>
+					</td>
+				</tr>
+				<tr>
+					<td style="width: 250px;vertical-align:top;padding-top:5px;" align="right">
+						<strong>Total Amount Due</strong>
+					</td>
+					<td align="right">
+						&dollar;&nbsp;
+						<input style="border:none;width:161px;height:26px;background-color: yellow;padding-left:10px;" type="text" name="amount" id="total" readonly>
+						<br><br>
+					</td>
+				</tr>
+				<tr>
+					<td style="width: 250px;vertical-align:top;" align="right">
+						<input type="reset" name="reset" value="Reset Form">
+					</td>
+					<td align="right">
+						<input style="padding-right:17px;" type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_paynowCC_LG.gif" border="0" name="submit" alt="Make payments with PayPal - it's fast, free and secure!">
+					</td>
+				</tr>					
+				
+			</tbody>
+		</table>
+		
+		<img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1">
+		<input type="hidden" name="cmd" value="_xclick">
+		<!-- Replace "business" value with your PayPal Email Address or your Merchant Account ID -->
+		<input type="hidden" name="business" value="9JDDG3N8342LE">
+		<input type="hidden" name="item_name" value="Online Dues Payment">
+		<input type="hidden" name="item_number" value="ODP-2020">
+		<input type="hidden" name="no_shipping" value="1">
+		<input type="hidden" name="shipping" value="0.00">
+		<input type="hidden" name="tax" value="0.00">
+		<input type="hidden" name="button_subtype" value="services">
+		<input type="hidden" name="no_note" value="0">
+		<input type="hidden" name="country" value="US">
+		<input type="hidden" name="currency_code" value="USD">
+		<input type="hidden" name="lc" value="US">
+		<input type="hidden" name="bn" value="PP-BuyNowBF:btn_paynowCC_LG.gif:NonHosted">
+
+	</form>
+	<hr />
+	<h3>Questions</h3>
+	<p>Should you have any questions or thoughts about the online payment facility, please contact <a href="mailto:sales@kofc11044.org">sales@kofc11044.org</a> or Financial Secretary Dan Dobson at dandobson@ymail.com.</p>
+</div>
+
+
+<script>
+
+	function setTwoNumberDecimal(event) {
+		this.value = parseFloat(this.value).toFixed(2);
+	}
+
+	function calcTixAmt()
+	{
+		var tix_prices= new Array();
+		tix_prices["6 Tickets - $5.00"]=5;
+		tix_prices["12 Tickets - $10.00"]=10;
+		tix_prices["No Tickets"]=0;
+		
+		var tixAmount=0;
+		var selectedTix = document.forms["duesform"].elements["select_tix"];
+		
+		tixAmount = tix_prices[selectedTix.value];
+		return tixAmount;
+	}
+	
+	function totCalc()
+	{
+		//document.getElementById("total").value = 0;
+		//calcTixAmt();
+		var assessed=0;
+		var sos=0;
+		var calcTotal=0;
+		
+		// Run form validations before calc
+		if (document.forms["duesform"].reportValidity()) {
+	
+			// Compute sum of all 3 components and update the total display field
+			assessed = document.getElementById("assessamt").value;
+			document.getElementById("assessamt").value = parseFloat(assessed).toFixed(2);
+			
+			if (document.getElementById("sos").value.length != 0){
+				sos = document.getElementById("sos").value;
+				document.getElementById("sos").value = parseFloat(sos).toFixed(2);
+			  } else {
+				sos = 0;
+			  }
+			  
+			calcTotal = parseFloat(assessed) + calcTixAmt() + parseFloat(sos);
+			
+			document.getElementById("total").value =  parseFloat(calcTotal).toFixed(2);
+		}
+		
+		return calcTotal;
+	}
+</script>
+
+</body>
+</html
